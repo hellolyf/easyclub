@@ -67,7 +67,7 @@ router.post('upload', sign.isLogin, async (ctx) => {
   if(file) {
     return ctx.body = {
       success: true,
-      url: file.url
+      url: path.join(config.upload.url, file.filename)
     };
   } else {
     return ctx.body = {
