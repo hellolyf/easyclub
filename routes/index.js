@@ -4,7 +4,7 @@ const Promise = require('promise');
 const Page = require('../common/page');
 const sign = require('../middlewares/sign');
 const upload = require('../common/upload');
-
+const path = require('path');
 router.get('/', async (ctx, next) => {
 
   let current_tag = config.tags.indexOf(ctx.query.tag ) > -1
