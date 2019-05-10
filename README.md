@@ -10,7 +10,9 @@ INSTALL
 4. 运行 `npm install` 安装依赖包
 5. 运行 `npm run build` 编译压缩前端文件
 6. 运行 `npm run test` 跑测试
-7. 执行`npm start` 使用 `nodemon` 启动，执行 `npm pm2` 使用 `pm2` 启动
+7. 执行`npm start` 使用 `nodemon` 启动，执行 `pm2 start bin/www` 使用 `pm2` 启动
+
+
 
 LICENSE
 -----
